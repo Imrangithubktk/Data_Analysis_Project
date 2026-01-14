@@ -1,0 +1,18 @@
+# Sales & Profit Analysis Project
+
+This project performs exploratory data analysis (EDA) on a company's sales dataset. 
+It includes data cleaning, outlier handling, visualization, and insights generation.
+
+## Key Insights:
+- Top-selling products and categories
+- Negative profit analysis by product, category, state, and ship mode
+- Seasonal trends and quarterly sales patterns
+
+## Recommendations:
+- Optimize discount strategy for loss-making products
+- Focus inventory and shipping on top products and states
+- Adjust marketing efforts according to seasonal trends
+
+## Tools & Libraries:
+- Python (pandas, numpy, matplotlib, seaborn)
+- Jupyter Notebook for interactive visualization
