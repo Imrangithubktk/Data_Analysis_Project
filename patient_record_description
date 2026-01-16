@@ -1,0 +1,139 @@
+Patient Record Analysis - Jupyter Notebook Project
+📋 Project Overview
+This Jupyter Notebook project performs exploratory data analysis (EDA) on hospital patient record data. The analysis focuses on understanding patient demographics, medical conditions, treatment procedures, costs, and outcomes to derive meaningful insights from healthcare data.
+
+🎯 Objectives
+Load and explore hospital patient data
+
+Perform data cleaning and preprocessing
+
+Conduct exploratory data analysis (EDA)
+
+Visualize key patterns and relationships in patient records
+
+Identify trends in patient satisfaction, costs, and treatment outcomes
+
+📊 Dataset Information
+The dataset contains 984 patient records with the following columns:
+
+Original Columns:
+Patient_ID: Unique identifier for each patient
+
+Age: Patient age (range: 25-78 years)
+
+Gender: Patient gender (Male/Female)
+
+Condition: Medical condition/diagnosis
+
+Procedure: Treatment/procedure performed
+
+Cost: Treatment cost (range: 100-25,000)
+
+Length_of_Stay: Days hospitalized (range: 1-76)
+
+Readmission: Whether patient was readmitted (Yes/No)
+
+Outcome: Treatment outcome (Recovered/Stable)
+
+Satisfaction: Patient satisfaction score (1-5 scale)
+
+Renamed Columns:
+Disease: Originally "Condition"
+
+Treatment: Originally "Procedure"
+
+Readmitt: Originally "Readmission"
+
+🔧 Technical Stack
+Python 3.x
+
+Libraries Used:
+
+pandas: Data manipulation and analysis
+
+numpy: Numerical computations
+
+seaborn: Statistical data visualization
+
+matplotlib: Plotting and visualization
+
+📈 Key Analysis Performed
+1. Data Loading and Initial Exploration
+Loaded dataset from CSV file
+
+Displayed first and last 5 records
+
+Checked dataset shape (984 rows × 10 columns)
+
+Examined data types and structure
+
+2. Data Cleaning and Preparation
+Renamed columns for better readability:
+
+Condition → Disease
+
+Procedure → Treatment
+
+Readmission → Readmitt
+
+Handled missing values in Gender column by randomly assigning 'Male'/'Female'
+
+Checked for duplicate records
+
+3. Statistical Analysis
+Generated descriptive statistics (mean, std, min, max, percentiles) for:
+
+Age (Mean: 53.75 years)
+
+Cost (Mean: $8,367, Range: $100-$25,000)
+
+Length of Stay (Mean: 37.66 days)
+
+Satisfaction (Mean: 3.6/5)
+
+4. Exploratory Data Analysis (EDA)
+Value Counts Analysis:
+
+Readmission patterns by age
+
+Satisfaction score distribution
+
+Gender distribution
+
+Data Quality Checks:
+
+Verified no duplicate Gender entries
+
+Checked data types consistency
+
+5. Visualization
+Created boxplots for numerical variables to identify:
+
+Age Distribution: Relatively normal distribution with median around 55
+
+Cost Distribution: Right-skewed with significant outliers (high-cost procedures)
+
+Length of Stay: Wide distribution with several outliers (long hospital stays)
+
+Satisfaction Scores: Concentrated around 3-4, with few extreme values
+
+🎨 Key Visualizations
+Age Boxplot: Shows age distribution with median around 55 years
+
+Cost Boxplot: Highlights expensive medical procedures as outliers
+
+Length of Stay Boxplot: Identifies unusually long hospital stays
+
+Satisfaction Boxplot: Reveals patient satisfaction patterns
+
+📊 Key Findings
+Patient Demographics: Average age is 53.75 years, with patients ranging from 25-78 years
+
+Treatment Costs: Significant variation in costs ($100 to $25,000), indicating diverse medical procedures
+
+Hospital Stay: Average stay is 37.66 days, with some extreme cases up to 76 days
+
+Patient Satisfaction: Generally positive (average 3.6/5), with most scores between 3-4
+
+Readmission Patterns: Certain age groups show higher readmission rates
+
